@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./styledemo.css"> -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <script>
-        tailwind.config = {
-          theme: {
-            screens: {
-                mobile: '375px',
-                desktop: '1440px',
+      tailwind.config = {
+        theme: {
+          screens: {
+            mobile: "375px",
+            desktop: "1440px",
+          },
+          extend: {
+            colors: {
+              darkCyan: "hsl(158, 36%, 37%)",
+              cream: "hsl(30, 38%, 92%)",
+              veryDarkBlue: "hsl(212, 21%, 14%)",
+              darkGrayishBlue: "hsl(228, 12%, 48%)",
+              white: "hsl(0, 0%, 100%)",
             },
-            extend: {
-              colors: {
-        
-              }
-            }
-          }
-        }
-      </script>
+          },
+        },
+      };
+    </script>
     <title>Product preview card</title>
-</head>
-<body>
-   
-    
-</body>
+  </head>
+  <body class="border-box">
+    <div class="container w-4/5 h-3/4 my-16 mx-auto">
+      <div class="card-container flex w-3/5 h-3/5 my-16 mx-auto">
+          <section class="img">
+            <img src="./images/image-product-desktop.jpg" alt="">
+          </section>
+          <section class="wordie">
+            <p>PERFUME</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House  of CHANEL</p>
+            <p>$149.99 <span>169.99</span></p>
+            <a href="#">Add to Cart</a>
+          </section>
+      </div>
+    </div>
+  </body>
 </html>
